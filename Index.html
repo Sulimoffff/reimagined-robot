@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Учет ноутбуков</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Реестр ноутбуков</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <h1>Учет выданных ноутбуков</h1>
-  
-  <form id="notebookForm">
-    <label for="model">Модель:</label>
-    <input type="text" id="model" name="model"><br>
-    <label for="serialNumber">Серийный номер:</label>
-    <input type="text" id="serialNumber" name="serialNumber"><br>
-    <label for="issuedTo">Выдан:</label>
-    <input type="text" id="issuedTo" name="issuedTo"><br>
-    <button type="button" onclick="addNotebook()">Добавить ноутбук</button>
-  </form>
-  
-  <h2>Список выданных ноутбуков</h2>
-  <ul id="notebookList">
-  </ul>
-  
-  <script src="script.js"></script>
+    <h1>Реестр ноутбуков</h1>
+    <div id="table-container">
+        <table id="notebook-table">
+            <thead>
+                <tr>
+                    <th>Имя сотрудника</th>
+                    <th>Дата выдачи</th>
+                    <th>Характеристики ноутбука</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Сюда будут динамически добавляться строки -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
+
